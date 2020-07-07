@@ -5,8 +5,11 @@
 }
 body{
     font-family: arial;
+    
 }
-
+img{
+    width: 100%;
+}
 .header {
     margin-bottom: 10px;
     color: white;
@@ -220,17 +223,63 @@ font-family: arial black;
     float: right;
     padding-top: 20px;
 }
+.firstImage {
+    position: relative;
+    width: 130px;
+    height: 140px;
+    border-radius: 100px;
+    transition: 1s;
+    display: inline-block;
+}
 
+.firstImage:hover{
+    transform: scale(1.1);
+}
+.firstImage:hover .overlay1{
+    opacity: 1;
+}
+.overlay1{
+    width: 130px;
+    height: 140px;
+    background: #000000a6;
+    color: #ff8100;
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay1 h3 {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    border-bottom: 2px solid darkorange;
+    color: #FF5722;
+    transform: translateX(-45px);
+    transition: 1s;
+    font-family: cursive;
+}
+.overlay1 h3 span {
+    font-size: 15px;
+    color: #d2cbcb;
+}
+.overlay1:hover{
+    opacity: 1;
+    
+}
+.overlay1:hover h3{
+    transform: translateX(0px);
+}
 .col-md-6.all-chefs img {
     border-radius: 100px;
     width: 130px;
     height: 140px;
     padding: 10px;
     transition: 1s;
+    /* position: relative; */
 }
-.col-md-6.all-chefs img:hover{
-   transform: translateY(-20px);
-}
+
 /*--------- End our chef---------*/
 .blog{
     background: #f0eff2;
