@@ -149,6 +149,8 @@ font-family: arial black;
     top: 60px;
     right: 10px;
     color: darkorange;
+    animation-name: slider2;
+    animation-duration: 1s;
 }
 .about-us-content p {
     width: 250px;
@@ -162,6 +164,14 @@ font-family: arial black;
     padding: 10px;
     box-shadow: 7px 11px 10px 0px #00000082;
     text-align: justify;
+    animation-name: slider2;
+    animation-duration: 2s;
+}
+@keyframes slider2{
+    from{
+      transform: rotateX(180deg);
+    }
+    to{transform: rotateX(0deg);}
 }
 /*---------- End about us ----------*/
 .gallery{
@@ -181,17 +191,50 @@ font-family: arial black;
 .GalleryImages{
     margin: auto;
     width: 900px;
+    position: relative;
     
 }
 .GalleryImages img{
-    width: 275px;
-    border-radius: 20px;
-    padding: 10px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     animation-name: animation1;
     animation-duration: 2s;
+    border-radius: 10px;
 }
-
+.food{
+    width: 275px;
+    padding: 10px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+.food-overlay{
+    background: #000000a6;
+    color: #ff8100;
+    position: absolute;
+    top: 10px;
+    width: 275px;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+.food-overlay h3 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-size: 40px;
+    font-family: cursive;
+    color: #ffffff7a;
+    transition: 1s;
+    transform: translateY(55px);
+}
+.food-overlay:hover{
+    opacity: 1;
+}
+.food-overlay:hover h3{
+    transform: translateY(0px);
+}
 .First_row{}
 .Second_row{
 }
