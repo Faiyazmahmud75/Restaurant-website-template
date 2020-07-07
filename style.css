@@ -15,6 +15,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 99999;
+    background: #000000a6;
     border-bottom: 3px solid #ff8100;
 }
 .logo{
@@ -62,7 +63,7 @@ font-family: arial black;
 }
 .menu>ul>li>a:hover{
     border-bottom: 2px solid darkorange;
-    color: black;
+    color: white;
 }
 /*--------End Header--------*/
 .banner{
@@ -228,7 +229,7 @@ font-family: arial black;
     transition: 1s;
 }
 .col-md-6.all-chefs img:hover{
-   transform: scale(1.1);
+   transform: translateY(-20px);
 }
 /*--------- End our chef---------*/
 .blog{
