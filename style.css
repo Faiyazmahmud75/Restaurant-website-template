@@ -92,18 +92,29 @@ font-family: arial black;
     top: 0;
     height: 500px;
     font-family: 'Galada', cursive;
+    
+}
+@keyframes slider{
+    from{
+        transform: translateX(-1500px);
+    }
+    to{transform: translate(1);}
 }
 .overlay h1{
     position: absolute;
     top: 80px;
     left: 40px;
     font-size: 60px;
+    animation-name: slider;
+    animation-duration: 1s;
 }
 .overlay h2{
     position: absolute;
     top: 160px;
     left: 85px;
     font-size: 60px;
+    animation-name: slider;
+    animation-duration: 2s;
 }
 /*--------End Banner---------*/
 
